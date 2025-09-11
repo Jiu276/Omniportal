@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omniportal - Your Gateway to Everything</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo" onclick="location.href='index.html'">
+                    <svg width="40" height="40" viewBox="0 0 40 40" class="logo-svg">
+                        <circle cx="20" cy="20" r="18" fill="none" stroke="#4a90e2" stroke-width="2" stroke-dasharray="3,2"/>
+                        <path d="M10 20 Q20 10 30 20 Q20 30 10 20" fill="#4a90e2" opacity="0.3"/>
+                        <circle cx="15" cy="15" r="2" fill="#4a90e2"/>
+                        <circle cx="25" cy="15" r="2" fill="#4a90e2"/>
+                        <circle cx="20" cy="25" r="2" fill="#4a90e2"/>
+                        <text x="20" y="8" text-anchor="middle" font-family="Caveat" font-size="6" fill="#4a90e2">Portal</text>
+                    </svg>
+                    <span class="logo-text">Omniportal</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#blog" class="nav-link">Blog</a></li>
+                    <li><a href="#products" class="nav-link">Products</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Welcome to <span class="highlight">Omniportal</span></h1>
+                    <p class="hero-subtitle">Your gateway to discovering amazing products, platforms, and insights</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="scrollToSection('blog')">Explore Blog</button>
+                        <button class="btn btn-secondary" onclick="scrollToSection('products')">View Products</button>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="floating-elements">
+                        <div class="float-item blog-icon"><i class="fas fa-blog"></i></div>
+                        <div class="float-item product-icon"><i class="fas fa-box"></i></div>
+                        <div class="float-item search-icon"><i class="fas fa-search"></i></div>
+                        <div class="float-item star-icon"><i class="fas fa-star"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog-section">
+        <div class="container">
+            <h2 class="section-title">Latest Articles</h2>
+            
+            <!-- Search and Filter -->
+            <div class="blog-controls">
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Search articles...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="category-filter">
+                    <select id="category-filter">
+                        <option value="">All Categories</option>
+                        <option value="product-review">Product Reviews</option>
+                        <option value="platform-review">Platform Reviews</option>
+                        <option value="tips">Tips & Guides</option>
+                        <option value="news">News</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Blog Grid -->
+            <div class="blog-grid" id="blog-grid">
+                <!-- Blog posts will be dynamically generated -->
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination" id="pagination">
+                <!-- Pagination will be dynamically generated -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products-section">
+        <div class="container">
+            <h2 class="section-title">Featured Products</h2>
+            <div class="products-grid" id="products-grid">
+                <!-- Products will be dynamically generated -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">About Omniportal</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Omniportal is your comprehensive gateway to discovering the best products, platforms, and insights across the digital landscape. We provide in-depth reviews, honest recommendations, and valuable guides to help you make informed decisions.</p>
+                    <p>Our team of experts carefully curates content to ensure you get the most relevant and up-to-date information about the latest trends, tools, and technologies that matter to you.</p>
+                </div>
+                <div class="about-features">
+                    <div class="feature">
+                        <i class="fas fa-star"></i>
+                        <h3>Quality Reviews</h3>
+                        <p>In-depth analysis and honest opinions</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-users"></i>
+                        <h3>Expert Team</h3>
+                        <p>Experienced professionals in various fields</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-clock"></i>
+                        <h3>Latest Updates</h3>
+                        <p>Stay current with the newest trends</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>hello@omniportal.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+1 (555) 123-4567</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>123 Digital Avenue, Tech City, TC 12345</span>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Widget -->
+    <div class="social-widget">
+        <a href="https://facebook.com/omniportal" target="_blank" class="social-link facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://twitter.com/omniportal" target="_blank" class="social-link twitter">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://instagram.com/omniportal" target="_blank" class="social-link instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://youtube.com/omniportal" target="_blank" class="social-link youtube">
+            <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://linkedin.com/company/omniportal" target="_blank" class="social-link linkedin">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Omniportal</h3>
+                    <p>Your gateway to everything digital</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="#">Product Reviews</a></li>
+                        <li><a href="#">Platform Reviews</a></li>
+                        <li><a href="#">Tips & Guides</a></li>
+                        <li><a href="#">News</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Omniportal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

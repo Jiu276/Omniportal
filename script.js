@@ -1,5 +1,14 @@
-// Blog Articles Data (15 articles from Feb-Sep 2025) - Already sorted by date (newest first)
+// Blog Articles Data (16 articles from Feb-Sep 2025) - Already sorted by date (newest first)
 const blogArticles = [
+    {
+        id: 16,
+        title: "Browse the Latest Trends in Children's School Wear",
+        category: "tips",
+        excerpt: "Discover the freshest trends in children's school wear for 2025. From modern uniforms to sustainable fabrics, explore how school fashion has evolved to combine comfort, style, and functionality.",
+        image: "校服3.png",
+        date: "2025-08-15",
+        content: "As we step into a new school year, parents and students alike are eager to discover the freshest trends in children's school wear. From classic uniforms to contemporary casual styles..."
+    },
     {
         id: 11,
         title: "Cryptocurrency Investment Strategies for Beginners in 2025",

@@ -1,5 +1,14 @@
-// Blog Articles Data (16 articles from Feb-Sep 2025) - Already sorted by date (newest first)
+// Blog Articles Data (17 articles from Feb-Sep 2025) - Already sorted by date (newest first)
 const blogArticles = [
+    {
+        id: 17,
+        title: "Welcome to French Toast: Celebrating Kids' Individual Style",
+        category: "tips",
+        excerpt: "Discover how French Toast has become a trusted brand in children's fashion, offering quality uniforms and everyday wear that celebrates individual style while meeting practical needs.",
+        image: "校服4.png",
+        date: "2025-08-20",
+        content: "In the ever-evolving world of children's fashion, one brand has consistently stood out for its commitment to quality, style, and individual expression. French Toast has become synonymous with affordable, durable clothing..."
+    },
     {
         id: 16,
         title: "Browse the Latest Trends in Children's School Wear",
